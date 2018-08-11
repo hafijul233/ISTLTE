@@ -1,12 +1,13 @@
     <section class="content-header">
       <h1>
-        Update Student Information 
+        Student Profile Detail Information 
         <small>Student Enrollment</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.php?api=Home&page=Dashboard"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="index.php?api=Enrollment&page=Dashboard">Student Enrollment</a></li>
-        <li class="active">Update</li>
+        <li><a href="index.php?api=Enrollment&page=StudentList">Navigation</a></li>
+        <li class="active">Profile</li>
       </ol>
     </section>
 
@@ -57,7 +58,7 @@
               </div>
               <!-- /.body -->
               <div class="box-footer">
-                  <button type="submit" class="btn btn-success pull-left"><h5>Register</h5></button>
+                  <button type="submit" class="btn btn-success pull-left"><h5>Submit</h5></button>
                   <button type="reset" class="btn btn-danger pull-right"><h5>Cancel</h5></button>
               </div>
             </form>

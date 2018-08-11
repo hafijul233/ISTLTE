@@ -27,7 +27,7 @@
         <section class="col-lg-12">
           <!-- Registration box -->
           <div class="box box-success">
-            <form action="" method="post" id="registerForm" multiple>
+            <form action="../../BLL/studentEnrollment/studentenrollprocess.php" method="get" id="demoForm" multiple>
               <div class="box-header">
                 <i class="fa fa-user-plus"></i>
                 <h3 class="box-title">New Student Registration Form</h3>
@@ -99,7 +99,7 @@
                             <div class="input-group-addon">
                               <i class="fa fa-calendar"></i>
                             </div>
-                            <input type="text" class="form-control pull-right" id="datepicker">
+                            <input type="text" class="form-control pull-right" id="datepicker"name="birthDate">
                           </div>
                         </div>
                       </div>
@@ -133,19 +133,19 @@
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label for="persent contact">Phone Number </label>
-                          <input type="text" class="form-control" name="presentPhone" />
+                          <input type="text" class="form-control" name="presentPhoneNo" required/>
                         </div>
                       </div>
-                  <!--<div class="col-lg-9">
+                      <div class="col-lg-9">
                         <div class="form-group">
                           <label for="permanent address">Permanent Address <font color="red">*</font></label>
-                          <textarea type="text" class="form-control" rows="3" name="presentAddress" placeholder="Wite Permanent Resident Address" required></textarea>
+                          <textarea type="text" class="form-control" rows="3" name="permanentAddress" placeholder="Wite Permanent Resident Address" required></textarea>
                         </div>
                       </div>
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label for="persent contact">Phone Number: <font color="red">*</font></label>
-                          <input type="text" class="form-control" name="presentAddress" required/>
+                          <input type="text" class="form-control" name="permanentPhoneNo" />
                         </div>
                       </div> -->
                     </div>
@@ -163,7 +163,7 @@
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="father pro">Father's Profession</label>
-                          <input type="text" class="form-control" name="fatherName" placeholder="Ex: Businessman" />
+                          <input type="text" class="form-control" name="fatherProfession" placeholder="Ex: Businessman" />
                         </div>
                       </div>
                     </div>
@@ -177,7 +177,7 @@
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="mother pro">Mother's Profession</label>
-                          <input type="text" class="form-control" name="motherName" placeholder="Ex: teacher" />
+                          <input type="text" class="form-control" name="motherProfession" placeholder="Ex: Teacher" />
                         </div>
                       </div>
                     </div>
@@ -185,13 +185,13 @@
                       <div class="col-lg-9">
                         <div class="form-group">
                           <label for="permanent address">Post Address <font color="red">*</font></label>
-                          <textarea type="text" class="form-control" rows="3" name="presentAddress" placeholder="Wite Permanent Resident Address" required></textarea>
+                          <textarea type="text" class="form-control" rows="3" name="postAddress" placeholder="Wite Permanent Resident Address" required></textarea>
                         </div>
                       </div>
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label for="persent contact">Phone Number: <font color="red">*</font></label>
-                          <input type="text" class="form-control" name="presentAddress" required/>
+                          <input type="text" class="form-control" name="phoneNo" required/>
                         </div>
                       </div>
                     </div>
@@ -214,8 +214,42 @@
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="course">Course Name <font color="red">*</font></label>
-                          <select class="form-control" id="course" name="courseName" required>
+                          <select class="form-control" id="course" name="course" required>
+                            <!-- All Opptions are in JS function below -->
                           </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="session">Session <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="session" placeholder="Ex: 2014 - 2015" required />
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="Semester">Semester <font color="red">*</font></label>
+                          <select class="form-control" name="semester" required >
+                            <option value="1">First</option>
+                            <option value="2">Second</option>
+                            <option value="3">Third</option>
+                            <option value="4">Fourth</option>
+                            <option value="5">Fifth</option>
+                            <option value="6">Sixth</option>
+                            <option value="7">Seventh</option>
+                            <option value="8">Eighth</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="session">Class Roll <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="classRoll" placeholder="Ex: 1576" required />
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="session">Registration No. <font color="red">*</font></label>
+                            <input type="text" class="form-control" name="RegistrationNo" placeholder="Ex: 14502000922" required />
                         </div>
                       </div>
                     </div>
@@ -248,9 +282,9 @@
     };
     reader.readAsDataURL(event.target.files[0]);
   };
-  
-//dynamic form select design
+</script>
 
+<script type="text/javascript">
 function removeAllOptions(sel, removeGrp) {
     var len, groups, par;
     if (removeGrp) {
@@ -311,9 +345,9 @@ function appendDataToSelect(sel, obj) {
 }
 
 // anonymous function assigned to onchange event of controlling select list
-document.forms['registerForm'].elements['department'].onchange = function(e) {
+document.forms['demoForm'].elements['department'].onchange = function(e) {
     // name of associated select list
-    var relName = 'courseName';
+    var relName = 'course';
     
     // reference to associated select list 
     var relList = this.form.elements[ relName ];
@@ -373,21 +407,19 @@ var Select_List_Data = {
                 value: ['DCOE', 'DELE', 'DCIE', 'DTEE']
             }
         }
-        
-    }
-    
+    } 
 };
 
 // populate associated select list when page loads
 window.onload = function() {
-    var form = document.forms['registerForm'];
+    var form = document.forms['demoForm'];
     
     // reference to controlling select list
     var sel = form.elements['department'];
     sel.selectedIndex = 0;
     
     // name of associated select list
-    var relName = 'courseName';
+    var relName = 'course';
     // reference to associated select list
     var rel = form.elements[ relName ];
     
@@ -399,6 +431,9 @@ window.onload = function() {
     appendDataToSelect(rel, data);
 };
 
+</script>
+
+<script type="text/javascript">
   $(function () {
     //Date picker
     $('#datepicker').datepicker({

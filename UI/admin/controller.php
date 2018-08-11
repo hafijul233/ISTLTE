@@ -37,6 +37,9 @@ if($page != NULL){
     case "UpdateStudent": $activePage = $activePage . "student/updatestudent.php";
       break;
     
+    case "StudentProfile": $activePage = $activePage . "student/studentprofile.php";
+      break;
+    
     
     default: $activePage = $activePage . "404.php";
       break;
