@@ -59,16 +59,6 @@ if($userinfo["confirm"] == "Found" && $userinfo["status"] == 1){
                 redirect_to($url);    
                     break;
                     
-        case $categories[5] : 
-            $url = "../../UI/" . $categories[5] . "/index.php";
-                redirect_to($url);    
-                    break;
-                    
-        case $categories[6] : 
-            $url = "../../UI/" . $categories[6] . "/index.php";
-                redirect_to($url);    
-                    break;
-                    
         default: redirect_to("../../include/404.php");
             break;
     }
