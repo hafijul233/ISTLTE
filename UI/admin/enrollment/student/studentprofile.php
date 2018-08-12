@@ -1,5 +1,6 @@
     <section class="content-header">
       <h1>
+        <i class="fa fa-user"></i>
         Student Profile Detail Information 
         <small>Student Enrollment</small>
       </h1>

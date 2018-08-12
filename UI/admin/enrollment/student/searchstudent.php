@@ -1,5 +1,6 @@
     <section class="content-header">
       <h1>
+        <i class="fa fa-search"></i>
         Search Student 
         <small>Student Enrollment</small>
       </h1>

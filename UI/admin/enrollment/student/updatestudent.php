@@ -1,5 +1,6 @@
     <section class="content-header">
       <h1>
+        <i class="fa fa-edit"></i>
         Update Student Information 
         <small>Student Enrollment</small>
       </h1>

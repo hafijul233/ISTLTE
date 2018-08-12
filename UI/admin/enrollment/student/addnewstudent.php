@@ -249,7 +249,7 @@
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="session">Registration No. <font color="red">*</font></label>
-                            <input type="text" class="form-control" name="RegistrationNo" placeholder="Ex: 14502000922" required />
+                            <input type="text" class="form-control" name="registrationNo" placeholder="Ex: 14502000922" required />
                         </div>
                       </div>
                     </div>

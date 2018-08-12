@@ -1,35 +1,44 @@
 <?php
 
   include '../../DAL/dbconnection.php';
+  include '../../DAL/studentEnrollment/studentEnrollQuery.php';
   include '../functions/validation.php';
+  include '../functions/validation.php';
+  include '../functions/contructor.php';
+  
   
   $firstName = filtertext($_POST["firstName"]);
   $middleName = filtertext($_POST["middleName"]);
   $lastName = filtertext($_POST["lastName"]);
-  $firstName = filtertext($_POST["firstName"]);
-    [profilePic] => 37786625_2192880977612049_958577876595113984_n.jpg
-    [emailAddress] => hafijul233@gmail.com
-    [contactNo] => +8801710534092
-    [bloodGroup] => O+
-    [birthDate] => 
-    [gender] => male
-    [presentAddress] => ghfgh
-    [presentPhoneNo] => +8801710534092
-    [permanentAddress] => ghjghj
-    [permanentPhoneNo] => +8801710534092
-    [fatherName] => mustak
-    [fatherProfession] => businssess
-    [motherName] => hamida
-    [motherProfession] => house wife
-    [postAddress] => fghfgh
-    [phoneNo] => 11 No
-    [department] => CS
-    [course] => CSE
-    [session] => 2014 - 2015
-    [semester] => 7
-    [classRoll] => 1576
-    [RegistrationNo] => dfgdfg
-  echo "<pre>";
-print_r($_GET);
-echo "</pre>";
+  
+  $profilePic = ["profilePic"];
+  
+  $emailAddress = emailvalidation($_POST["emailAddress"]);
+  $contactNo = phonevalidation($_POST["cntactNo"]);
+  $bloodHroup = filtertext($_POST["bloodGroup"]);
+  $birthDate = filtertext($_POST["birthDate"]); 
+  $gender = filtertext($_POST["gender"]);
+  $presentAddress = filtertext($_POST["persentAddress"]);
+  $presentPhoneNo = phonevalidation($_POST["presentPhoneNo"]);
+  $permanentAddress = filtertext($_POST["permanentAddress"]);
+  $permanentPhoneNo = phonevalidation($_POST["permanentPhoneNo"]);
+  
+  $fatherName = filtertext($_POST["fatherName"]);
+  $fatherProfession = filtertext($_POST["fatherProfession"]);
+  
+  $motherName = filtertext($_POST["motherName"]);
+  $motherProfession = filtertext($_POST["motherProfession"]);
+  
+  $postAddress = filtertext($POST["postAddress"]);
+  $phoneNo = phonevalidation($_POST["phoneNo"]);
+  
+  $department = filtertext($_POST["department"]);
+  $course = filtertext($_POST["course"]);
+  $session = filtertext($_POST["session"]);
+  $semester = filtertext($_POST["session"]);
+  $classRoll = classrollvalidation($_POST["classRoll"]);
+  $registrationNo = registrationvalidation($_POST["registrationNo"]);
+  
+  
+  
 ?>

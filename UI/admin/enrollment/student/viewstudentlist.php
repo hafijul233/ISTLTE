@@ -6,6 +6,7 @@
 
     <section class="content-header">
       <h1>
+        <i class="fa fa-users"></i>
         Enrolled Student List 
         <small>Student Enrollment</small>
       </h1>

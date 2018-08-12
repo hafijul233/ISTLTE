@@ -1,13 +1,5 @@
 <?php
-
-function nameValidation($name)
-{
-  $result =  preg_match("/^[a-zA-Z ]*$/",$name);
-  if($result == TRUE){
-    return ;
-  }
-    $nameErr = "Only letters and white space allowed";
-}
+$errors = array();
 
 function filtertext($string)
 {
@@ -18,6 +10,15 @@ function filtertext($string)
   return $string;
 }
 
+
+function namevalidation($name)
+{
+  $name = filtertext($name);
+  
+  if(preg_match("/^[a-zA-Z ]*$/",$name)){
+    return $name;
+  }
+}
 
 function imagevalidation($image)
 {
@@ -63,4 +64,38 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
+}
+
+function emailvalidation($email)
+{
+  $email = filtertext($email);
+  if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    return $email;
+  }
+}
+
+function phonevalidation($phone)
+{
+  $phone = filtertext($phone);
+  
+  if(preg_match("/\"+\"+[0-9]{13}$/", $phone)) {
+    return $phone;
+  }
+}
+
+function classrollvalidation($roll)
+{
+  $roll = filtertext($roll);
+  
+  if(preg_match("/[0-9]{4} | [0-9]{4}$/", $roll)) {
+    return $roll;
+  }
+}
+
+function registrationvalidation($regno)
+{
+  $regno = filtertext($regno);
+  
+  return $regno;
+  
 }
