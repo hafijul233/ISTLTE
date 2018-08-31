@@ -3,7 +3,6 @@
   include '../../DAL/dbconnection.php';
   include '../../DAL/studentEnrollment/studentEnrollQuery.php';
   include '../functions/validation.php';
-  include '../functions/validation.php';
   include '../functions/contructor.php';
   
   
