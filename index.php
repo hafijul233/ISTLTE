@@ -1,8 +1,8 @@
 <?php
     
-    include 'SETUP/configuration.php';
-    include 'BLL/functions/session.php';
-    include 'BLL/functions/message.php';
+    include 'Setup/configuration.php';
+    include 'Controllers/functions/session.php';
+    include 'Controllers/functions/message.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,11 +12,11 @@
   <link rel="icon" type="image/png" href="Resources/img/logo/istbd.png" >
   <title><?php echo $programName; ?> | Log in</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="LIB/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Libraries/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="LIB/dist/css/ISTLTE.css">
-  <link rel="stylesheet" href="LIB/plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="Libraries/dist/css/ISTLTE.css">
+  <link rel="stylesheet" href="Libraries/plugins/iCheck/square/blue.css">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
@@ -25,7 +25,7 @@
   </div>
   <div class="login-box-body">
     <p class="login-box-msg">Log in to start your session</p>
-    <form action="BLL/login/loginprocess.php" method="post">
+    <form action="Controllers/login-module/loginprocess.php" method="post">
       <div class="form-group has-feedback">
           <input type="email" class="form-control" placeholder="Email" name="emailaddress" required >
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -66,9 +66,9 @@
     include_once 'include/publicfooter.php';
   ?>
     
-<script src="LIB/plugins/jQuery/jquery-2.2.3.min.js"></script>
-<script src="LIB/bootstrap/js/bootstrap.min.js"></script>
-<script src="LIB/plugins/iCheck/icheck.min.js"></script>
+<script src="Libraries/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="Libraries/bootstrap/js/bootstrap.min.js"></script>
+<script src="Libraries/plugins/iCheck/icheck.min.js"></script>
 <script>
   $(function () {
     $('input').iCheck({
