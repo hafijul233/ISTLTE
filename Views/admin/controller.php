@@ -1,4 +1,5 @@
 <?php
+  
 $activePage = NULL;
 
 //Check Which Api to Run
@@ -51,4 +52,4 @@ else{
 }
 
 
-reqViewsre $activePage;
+require $activePage;

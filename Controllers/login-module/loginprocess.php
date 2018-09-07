@@ -1,7 +1,7 @@
 <?php
 
-include '../../DAL/dbconnection.php';
-include '../../SETUP/configuration.php';
+include '../../Database/dbconnection.php';
+include '../../Setup/configuration.php';
 include '../functions/session.php';
 include '../functions/helper.php';
 include '../functions/validation.php';
@@ -34,27 +34,27 @@ if($userinfo["confirm"] == "Found" && $userinfo["status"] == 1){
        
     switch ($userCategory) {//$categories will be found in Configuration.php
         case $categories["admin"] : 
-            $url = "../../UI/" . $categories["admin"] . "/index.php";
+            $url = "../../Views/" . $categories["admin"] . "/index.php";
                 redirect_to($url);    
                     break;
                     
         case $categories["teacher"] : 
-            $url = "../../UI/" . $categories["teacher"] . "/index.php";
+            $url = "../../Views/" . $categories["teacher"] . "/index.php";
                 redirect_to($url);    
                     break;
                     
         case $categories["employee"] : 
-            $url = "../../UI/" . $categories["employee"] . "/index.php";
+            $url = "../../Views/" . $categories["employee"] . "/index.php";
                 redirect_to($url);    
                     break;
                     
         case $categories["parent"] : 
-            $url = "../../UI/" . $categories["parent"] . "/index.php";
+            $url = "../../Views/" . $categories["parent"] . "/index.php";
                 redirect_to($url);    
                     break;
                     
         case $categories["student"] : 
-            $url = "../../UI/" . $categories["student"] . "/index.php";
+            $url = "../../Views/" . $categories["student"] . "/index.php";
                 redirect_to($url);    
                     break;
                     

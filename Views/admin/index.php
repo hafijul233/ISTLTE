@@ -1,6 +1,6 @@
 <?php
 
-    include '../../SETUP/configuration.php';
+    include '../../Setup/configuration.php';
     include '../../Controllers/functions/session.php';
     include '../../Controllers/functions/helper.php';
    
@@ -55,7 +55,7 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <?php
-      reqViewsre 'controller.php';
+      require 'controller.php';
     ?>
     <!-- /.content -->
   </div>
