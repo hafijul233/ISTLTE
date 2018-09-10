@@ -1,17 +1,17 @@
 <?php
-  
+/*  
 $activePage = NULL;
 
 //Check Which Api to Run
 if($apiName != NULL){
   switch ($apiName){
-    case "Home" : $activePage = "";
+    case "Home" : $activePage = "Views/";
       break;
     
-    case "Enrollment" : $activePage = "enrollment/";
+    case "Enrollment" : $activePage = "../Enrollment/";
       break;
     
-    default :$activePage = "";
+    default :$activePage = "Views/";
       break;
   }
 }
@@ -23,7 +23,7 @@ else{
 //Check Which Page to Show
 if($page != NULL){
   switch ($page) {
-    case "Dashboard": $activePage = $activePage . "dashboard.php";
+    case "Dashboard": $activePage = $activePage . "Dashboard.php";
       break;
     
     case "AddNewStudent": $activePage = $activePage . "student/addnewstudent.php";
@@ -48,8 +48,10 @@ if($page != NULL){
 }
   
 else{
-    $activePage = $activePage . "dashboard.php";
+    $activePage = $activePage . "Dashboard.php";
 }
 
 
 require $activePage;
+*/
+require 'Views/Dashboard.php';

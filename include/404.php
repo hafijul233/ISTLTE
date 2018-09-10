@@ -8,11 +8,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php echo $programName; ?> | 404 Page not found</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="../Libraries/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../LIB/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="../Libraries/dist/css/ISTLTE.css">
-  <link rel="stylesheet" href="../Libraries/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../LIB/dist/css/ISTLTE.css">
+  <link rel="stylesheet" href="../LIB/dist/css/skins/_all-skins.min.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -69,14 +69,14 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.3 -->
-<script src="../Libraries/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../LIB/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="../Libraries/bootstrap/js/bootstrap.min.js"></script>
+<script src="../LIB/bootstrap/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="../Libraries/plugins/fastclick/fastclick.js"></script>
+<script src="../LIB/plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="../Libraries/dist/js/app.min.js"></script>
+<script src="../LIB/dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../Libraries/dist/js/demo.js"></script>
+<script src="../LIB/dist/js/demo.js"></script>
 </body>
 </html>

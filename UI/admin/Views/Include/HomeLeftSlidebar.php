@@ -24,15 +24,15 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="header"><center>MAIN NAVIGATION</center></li>
         <li class="active">
-          <a href="#">
+          <a href="index.php?api=Home&page=Dashboard">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
         <li>
           <a href="index.php?api=Enrollment&page=Dashboard">
-            <i class="fa fa-user-plus"></i> <span>Student Enrollment</span>
+            <i class="fa fa-user-plus"></i> <span>Enrollment</span>
           </a>
         </li>
         
