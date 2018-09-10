@@ -1,5 +1,5 @@
 <?php
-/*  
+
 $activePage = NULL;
 
 //Check Which Api to Run
@@ -8,7 +8,7 @@ if($apiName != NULL){
     case "Home" : $activePage = "Views/";
       break;
     
-    case "Enrollment" : $activePage = "../Enrollment/";
+    case "Enrollment" : $activePage = "Views/Enrollment/";
       break;
     
     default :$activePage = "Views/";
@@ -53,5 +53,5 @@ else{
 
 
 require $activePage;
-*/
-require 'Views/Dashboard.php';
+
+//require 'Views/Dashboard.php';
