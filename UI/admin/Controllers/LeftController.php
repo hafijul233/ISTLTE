@@ -8,11 +8,15 @@ else{
         require 'Views/Include/HomeLeftSlidebar.php';
           break;
         
+      case "Administration" :
+        require 'Views/Include/AdministrationLeftSlidebar.php';
+          break;
+        
       case "Enrollment" :
         require 'Views/Include/EnrollLeftSlidebar.php';
           break;
 
-      default: include 'mainleftslidebar.php';
+      default: require 'HomeLeftSlidebar.php';
           break;
     }
 }

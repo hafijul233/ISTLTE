@@ -1,6 +1,5 @@
 <?php
 
-  include '../../DAL/dbconnection.php';
   include '../../DAL/studentEnrollment/studentEnrollQuery.php';
   include '../functions/validation.php';
   include '../functions/contructor.php';
@@ -38,6 +37,7 @@
   $classRoll = classrollvalidation($_POST["classRoll"]);
   $registrationNo = registrationvalidation($_POST["registrationNo"]);
   
-  
+  //Send data To Student profile Table 
+    
   
 ?>

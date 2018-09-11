@@ -27,7 +27,7 @@
         <section class="col-lg-12">
           <!-- Registration box -->
           <div class="box box-success">
-            <form action="../../Controllers/studentEnrollment/studentenrollprocess.php" method="get" id="demoForm" multiple>
+            <form action="../../BLL/studentEnrollment/studentenrollprocess.php" method="get" id="demoForm" multiple>
               <div class="box-header">
                 <i class="fa fa-user-plus"></i>
                 <h3 class="box-title">New Student Registration Form</h3>
@@ -44,17 +44,17 @@
                         </div>
                         <div class="form-group">
                           <label for="First Name">Middle Name <font color="red">*</font></label>
-                          <input type="text" class="form-control" name="middleName" placeholder="Ex: Hafijul" reqViewsred>
+                          <input type="text" class="form-control" name="middleName" placeholder="Ex: Hafijul" required>
                         </div>
                         <div class="form-group">
                           <label for="First Name">Last Name  <font color="red">*</font></label>
-                          <input type="text" class="form-control" name="lastName" placeholder="Ex: Islam" reqViewsred>
+                          <input type="text" class="form-control" name="lastName" placeholder="Ex: Islam" required>
                         </div>
                       </div>
                       <div class="col-lg-3">
                           <div class="form-group">
                             <label for="Profile Picture">Picture  <font color="red">*</font></label>
-                            <input type="file" class="form-control-static" name="profilePic" accept="image/gif, image/jpeg, image/png" onchange="loadFile(event)" reqViewsred />
+                            <input type="file" class="form-control-static" name="profilePic" accept="image/gif, image/jpeg, image/png" onchange="loadFile(event)" required />
                           </div>
                           <center>
                             <img class="img-bordered img-responsive"  style="height:156px; width: auto;" id="output"/>
@@ -66,27 +66,27 @@
                       <div class="col-lg-5">
                         <div class="form-group">
                           <label for="Email Address">Email Address <font color="red">*</font></label>
-                          <input type="email" class="form-control" name="emailAddress" placeholder="Ex: example@example.com" reqViewsred />
+                          <input type="email" class="form-control" name="emailAddress" placeholder="Ex: example@example.com" required />
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="Contact Number">Contact No. <font color="red">*</font></label>
-                          <input type="tel" class="form-control" name="contactNo" placeholder="Ex: +880123456789" reqViewsred />
+                          <input type="tel" class="form-control" name="contactNo" placeholder="Ex: +880123456789" required />
                         </div>
                       </div>
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label for="Blood Group">Blood Group <font color="red">*</font></label>
-                          <select class="form-control" name="bloodGroup" reqViewsred>
-                            <option value="A+">A+ve</option>
-                            <option value="A+">A-ve</option>
-                            <option value="B+">B+ve</option>
-                            <option value="B+">B-ve</option>
-                            <option value="AB+">AB+ve</option>
-                            <option value="AB+">AB-ve</option>
-                            <option value="O+">O+ve</option>
-                            <option value="O+">O+ve</option>
+                          <select class="form-control" name="bloodGroup" required>
+                            <option value="A+">A +ve</option>
+                            <option value="A-">A -ve</option>
+                            <option value="B+">B +ve</option>
+                            <option value="B-">B -ve</option>
+                            <option value="AB+">AB +ve</option>
+                            <option value="AB-">AB -ve</option>
+                            <option value="O+">O +ve</option>
+                            <option value="O-">O -ve</option>
                           </select>
                         </div>
                       </div>
@@ -127,19 +127,19 @@
                       <div class="col-lg-9">
                         <div class="form-group">
                           <label for="persent address">Present Address <font color="red">*</font></label>
-                          <textarea type="text" class="form-control" rows="3" name="presentAddress" placeholder="Wite Present Resident Address" reqViewsred></textarea>
+                          <textarea type="text" class="form-control" rows="3" name="presentAddress" placeholder="Wite Present Resident Address" required></textarea>
                         </div>
                       </div>
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label for="persent contact">Phone Number </label>
-                          <input type="text" class="form-control" name="presentPhoneNo" reqViewsred/>
+                          <input type="text" class="form-control" name="presentPhoneNo" required/>
                         </div>
                       </div>
                       <div class="col-lg-9">
                         <div class="form-group">
                           <label for="permanent address">Permanent Address <font color="red">*</font></label>
-                          <textarea type="text" class="form-control" rows="3" name="permanentAddress" placeholder="Wite Permanent Resident Address" reqViewsred></textarea>
+                          <textarea type="text" class="form-control" rows="3" name="permanentAddress" placeholder="Wite Permanent Resident Address" required></textarea>
                         </div>
                       </div>
                       <div class="col-lg-3">
@@ -185,13 +185,13 @@
                       <div class="col-lg-9">
                         <div class="form-group">
                           <label for="permanent address">Post Address <font color="red">*</font></label>
-                          <textarea type="text" class="form-control" rows="3" name="postAddress" placeholder="Wite Permanent Resident Address" reqViewsred></textarea>
+                          <textarea type="text" class="form-control" rows="3" name="postAddress" placeholder="Wite Permanent Resident Address" required></textarea>
                         </div>
                       </div>
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label for="persent contact">Phone Number: <font color="red">*</font></label>
-                          <input type="text" class="form-control" name="phoneNo" reqViewsred/>
+                          <input type="text" class="form-control" name="phoneNo" required/>
                         </div>
                       </div>
                     </div>
@@ -203,7 +203,7 @@
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="department">Department  <font color="red">*</font></label>
-                          <select class="form-control" id="department" name="department" reqViewsred>
+                          <select class="form-control" id="department" name="department" required>
                             <option value="CS">Computer Science</option>
                             <option value="EC">Electronics and Communication</option>
                             <option value="BA">Business Administration</option>
@@ -214,7 +214,7 @@
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="course">Course Name <font color="red">*</font></label>
-                          <select class="form-control" id="course" name="course" reqViewsred>
+                          <select class="form-control" id="course" name="course" required>
                             <!-- All Opptions are in JS function below -->
                           </select>
                         </div>
@@ -222,13 +222,13 @@
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="session">Session <font color="red">*</font></label>
-                            <input type="text" class="form-control" name="session" placeholder="Ex: 2014 - 2015" reqViewsred />
+                            <input type="text" class="form-control" name="session" placeholder="Ex: 2014 - 2015" required />
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="Semester">Semester <font color="red">*</font></label>
-                          <select class="form-control" name="semester" reqViewsred >
+                          <select class="form-control" name="semester" required >
                             <option value="1">First</option>
                             <option value="2">Second</option>
                             <option value="3">Third</option>
@@ -243,13 +243,13 @@
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="session">Class Roll <font color="red">*</font></label>
-                            <input type="text" class="form-control" name="classRoll" placeholder="Ex: 1576" reqViewsred />
+                            <input type="text" class="form-control" name="classRoll" placeholder="Ex: 1576" required />
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="session">Registration No. <font color="red">*</font></label>
-                            <input type="text" class="form-control" name="registrationNo" placeholder="Ex: 14502000922" reqViewsred />
+                            <input type="text" class="form-control" name="registrationNo" placeholder="Ex: 14502000922" required />
                         </div>
                       </div>
                     </div>

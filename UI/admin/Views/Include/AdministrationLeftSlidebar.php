@@ -24,39 +24,33 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="header"><center>MAIN NAVIGATION</center></li>
+        <li class="header">ENROLL NAVIGATION</li>
         <li>
-          <a href="index.php?api=Home&page=Dashboard">
+            <a href="index.php?api=Home&page=Dashboard">
+            <i class="fa fa-home"></i> <span>Go To Home Page</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="index.php?api=Enrollment&page=Dashboard">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li>
-          <a href="index.php?api=Administration&page=Dashboard">
-            <i class="fa fa-university"></i> <span>Administration</span>
-          </a>
-        </li>
-        <li>
-          <a href="index.php?api=Enrollment&page=Dashboard">
-            <i class="fa fa-user-plus"></i> <span>Enrollment</span>
-          </a>
-        </li>
-        
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Layout Options</span>
+            <i class="fa fa-graduation-cap"></i>
+            <span>Student</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="Views/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="Views/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="Views/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="Views/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="index.php?api=Enrollment&page=AddNewStudent"><i class="fa fa-user-plus"></i> Add New Student</a></li>
+            <li><a href="index.php?api=Enrollment&page=StudentList"><i class="fa fa-users"></i> Student Enroll list</a></li>
+            <li><a href="index.php?api=Enrollment&page=SearchStudent"><i class="fa fa-search"></i> Search Student</a></li>
+            <li><a href="index.php?api=Enrollment&page=UpdateStudent"><i class="fa fa-edit"></i> Update Student Profile</a></li>
           </ul>
         </li>
-        <li>
+        <!--<li>
           <a href="Views/widgets.html">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
@@ -159,6 +153,39 @@
             <li><a href="Views/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-share"></i> <span>Multilevel</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+            <li>
+              <a href="#"><i class="fa fa-circle-o"></i> Level One
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+                <li>
+                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+          </ul>
+        </li>-->
         <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
         <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>

@@ -3,42 +3,41 @@
 $activePage = NULL;
 
 //Check Which Api to Run
-if($apiName != NULL){
-  switch ($apiName){
+switch ($apiName)
+{
     case "Home" : $activePage = "Views/";
-      break;
+        break;
+    
+    case "Adminstration" : $activePage = "Views/Adminstration/";
+        break;
     
     case "Enrollment" : $activePage = "Views/Enrollment/";
-      break;
+        break;
     
-    default :$activePage = "Views/";
+    default : $activePage = "Views/";
       break;
-  }
-}
-
-else{
-  $activePage = NULL;
 }
 
 //Check Which Page to Show
 if($page != NULL){
-  switch ($page) {
+  switch ($page)
+  {
     case "Dashboard": $activePage = $activePage . "Dashboard.php";
       break;
     
-    case "AddNewStudent": $activePage = $activePage . "student/addnewstudent.php";
+    case "AddNewStudent": $activePage = $activePage . "student/AddNewStudent.php";
       break;
     
-    case "StudentList": $activePage = $activePage . "student/viewstudentlist.php";
+    case "StudentList": $activePage = $activePage . "student/ViewStudentList.php";
       break;
     
-    case "SearchStudent": $activePage = $activePage . "student/searchstudent.php";
+    case "SearchStudent": $activePage = $activePage . "student/SearchStudent.php";
       break;
     
     case "UpdateStudent": $activePage = $activePage . "student/updatestudent.php";
       break;
     
-    case "StudentProfile": $activePage = $activePage . "student/studentprofile.php";
+    case "StudentProfile": $activePage = $activePage . "student/StudentProfile.php";
       break;
     
     
@@ -47,11 +46,9 @@ if($page != NULL){
   }  
 }
   
-else{
+else {
     $activePage = $activePage . "Dashboard.php";
 }
 
 
 require $activePage;
-
-//require 'Views/Dashboard.php';
