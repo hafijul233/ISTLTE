@@ -11,4 +11,15 @@ function generateEmailAddress($firstName, $middleName, $course, $classRoll){
   return $emailaddress;  
 }
 
+function GeneratePassword()
+{
+    $characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    $randstring = '';
+    for ($i = 0; $i < 10; $i++) {
+        $randstring .= $characters[rand(0, strlen($characters))];
+    }
+
+    return $randstring;
+}
+
 

@@ -25,21 +25,26 @@ if($page != NULL){
     case "Dashboard": $activePage = $activePage . "Dashboard.php";
       break;
     
-    case "AddNewStudent": $activePage = $activePage . "student/AddNewStudent.php";
+    case "AddNewStudent": $activePage .= "student/AddNewStudent.php";
       break;
     
-    case "StudentList": $activePage = $activePage . "student/ViewStudentList.php";
+    case "StudentList": $activePage .= "student/ViewStudentList.php";
       break;
     
-    case "SearchStudent": $activePage = $activePage . "student/SearchStudent.php";
+    case "SearchStudent": $activePage .= "student/SearchStudent.php";
       break;
     
-    case "UpdateStudent": $activePage = $activePage . "student/UpdateStudent.php";
+    case "UpdateStudent": $activePage .= "student/UpdateStudent.php";
       break;
     
-    case "StudentProfile": $activePage = $activePage . "student/StudentProfile.php";
+    case "StudentProfile": $activePage .= "student/StudentProfile.php";
       break;
     
+    case "EnrollConfirmation": $activePage .= "student/EnrollmentConfirmation.php";
+      break;
+    
+    case "UserProfile": $activePage .= "student/StudentProfile.php";
+      break;
     
     default: $activePage = $activePage . "404.php";
       break;

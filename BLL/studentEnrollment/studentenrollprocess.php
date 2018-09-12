@@ -3,8 +3,10 @@
   include '../../DAL/studentEnrollment/studentInsertQuery.php';
   include '../functions/validation.php';
   include '../functions/session.php';
+  include '../functions/helper.php';
   include '../../Models/Student.php';
   include '../../Setup/configuration.php';
+  
   
   $firstName = filtertext($_POST["firstName"]);
   $middleName = filtertext($_POST["middleName"]);
@@ -96,14 +98,33 @@
     if($confirm == 1){
       $confirm = InsertIntoStudentParentsInfo($NewStudent);
       
-      if(confirm == 1){
+      if($confirm == 1){
         $confirm = InsertIntoUserAuthenticationInfo($NewStudent->emailaddress, $NewStudent->studentid, $NewStudent->comments);
       
-        if(confirm == 1){
+        if($confirm == 1){
+          $finalconfirm = UpdateStudentRegister($NewStudent->studentid);
           
+          if($finalconfirm == 1){
+            $UserLoginInfo = GetUserLoginInfo($NewStudent->studentid);
+            $url = "../../UI/admin/index.php?api=Enrollment&page=EnrollConfirmation&email=" . $UserLoginInfo["emailaddress"] . "&password=" . $UserLoginInfo["passwords"] . "&category=" . $UserLoginInfo["categories"];  
+          
+            redirect_to($url);
+          }
+          else{
+            //echo 'retrive korte pari nai';
+          }
+        }
+        else{
+          //echo "Hoi nai User register";
         }
       }
+     // echo "Hoi nai Parents Table";
+    }
+    else{
+      //echo "Hoi nai Education Table";
     }
   }
+  
+  
   
 ?>

@@ -30,7 +30,7 @@
             <i class="fa fa-home"></i> <span>Go To Home Page</span>
           </a>
         </li>
-        <li class="active">
+        <li>
           <a href="index.php?api=Enrollment&page=Dashboard">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
