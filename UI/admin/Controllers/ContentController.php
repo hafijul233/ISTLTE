@@ -8,7 +8,7 @@ switch ($apiName)
     case "Home" : $activePage = "Views/";
         break;
     
-    case "Adminstration" : $activePage = "Views/Adminstration/";
+    case "Administration" : $activePage = "Views/Administration/";
         break;
     
     case "Enrollment" : $activePage = "Views/Enrollment/";
