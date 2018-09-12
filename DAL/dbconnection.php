@@ -4,8 +4,6 @@ $server = "localhost";
 $user = "root";
 $pass = "";
 $dbase = "istlte";
-
-global $connection;
     
     $connection = new mysqli($server, $user, $pass, $dbase);
 // Check connection

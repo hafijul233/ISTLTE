@@ -27,22 +27,39 @@
           <div class="box box-info">
             <div class="box-header">
               <i class="fa fa-users"></i>
-              <h3 class="box-title"> Data Table With Full Features</h3>
+              <h3 class="box-title"> Enrolled Student List</h3>
             </div>
             <div class="box-body">
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped table-hover">
                 <thead>
                 <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
+                  <th>Name</th>
+                  <th>Department</th>
+                  <th>Course Enrolled</th>
+                  <th>Registration No</th>
+                  <th>Class Roll</th>
+                  <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
+                <?php
+                  include '../../DAL/dbconnection.php';
+                  
+                  $ViewQeury = "SELECT first, firstname, lastname FROM MyGuests";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+                ?>
+                  <tr>
                   <td>Trident</td>
                   <td>Internet
                     Explorer 4.0
@@ -452,11 +469,12 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
+                  <th>Name</th>
+                  <th>Department</th>
+                  <th>Course Enrolled</th>
+                  <th>Registration No</th>
+                  <th>Class Roll</th>
+                  <th>Action</th>
                 </tr>
                 </tfoot>
               </table>

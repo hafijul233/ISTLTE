@@ -27,7 +27,7 @@
         <section class="col-lg-12">
           <!-- Registration box -->
           <div class="box box-success">
-            <form action="../../BLL/studentEnrollment/studentenrollprocess.php" method="get" id="demoForm" multiple>
+            <form action="../../BLL/studentEnrollment/studentenrollprocess.php" method="post" id="demoForm" enctype="multipart/form-data" multiple>
               <div class="box-header">
                 <i class="fa fa-user-plus"></i>
                 <h3 class="box-title">New Student Registration Form</h3>
@@ -99,7 +99,7 @@
                             <div class="input-group-addon">
                               <i class="fa fa-calendar"></i>
                             </div>
-                            <input type="text" class="form-control pull-right" id="datepicker"name="birthDate">
+                            <input type="text" class="form-control pull-right" id="datepicker"name="birthDate" placeholder="2018-09-13" required>
                           </div>
                         </div>
                       </div>
@@ -133,7 +133,7 @@
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label for="persent contact">Phone Number </label>
-                          <input type="text" class="form-control" name="presentPhoneNo" required/>
+                          <input type="text" class="form-control" name="presentPhoneNo" placeholder="Ex: +880123456789" required/>
                         </div>
                       </div>
                       <div class="col-lg-9">
@@ -145,7 +145,7 @@
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label for="persent contact">Phone Number: <font color="red">*</font></label>
-                          <input type="text" class="form-control" name="permanentPhoneNo" />
+                          <input type="text" class="form-control" name="permanentPhoneNo" placeholder="Ex: +880123456789" required/>
                         </div>
                       </div>
                     </div>
@@ -157,7 +157,7 @@
                       <div class="col-lg-8">
                         <div class="form-group">
                           <label for="father Name">Father's Name</label>
-                          <input type="text" class="form-control" name="fatherName" placeholder="Ex: Father fullName" />
+                          <input type="text" class="form-control" name="fatherName" placeholder="Ex: Father Fullname" />
                         </div>
                       </div>
                       <div class="col-lg-4">
@@ -171,13 +171,33 @@
                       <div class="col-lg-8">
                         <div class="form-group">
                           <label for="mother Name">Mother's Name</label>
-                          <input type="text" class="form-control" name="motherName" placeholder="Ex: Mother fullName" />
+                          <input type="text" class="form-control" name="motherName" placeholder="Ex: Mother Fullname" />
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="form-group">
                           <label for="mother pro">Mother's Profession</label>
                           <input type="text" class="form-control" name="motherProfession" placeholder="Ex: Teacher" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label for="mother Name">Guardian Name: <font color="red">*</font></label>
+                          <input type="text" class="form-control" name="guardianName" placeholder="Ex: Guardian Fullname" />
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="form-group">
+                          <label for="mother Name">Guardian Contact No: <font color="red">*</font></label>
+                          <input type="text" class="form-control" name="guardianContactNo" placeholder="Ex: +880123456789" required />
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="form-group">
+                          <label for="mother Name">Relation With Student: <font color="red">*</font></label>
+                          <input type="text" class="form-control" name="relationWithStudent" placeholder="Ex: Father / Mother / Brother" required/>
                         </div>
                       </div>
                     </div>
@@ -191,7 +211,7 @@
                       <div class="col-lg-3">
                         <div class="form-group">
                           <label for="persent contact">Phone Number: <font color="red">*</font></label>
-                          <input type="text" class="form-control" name="phoneNo" required/>
+                          <input type="text" class="form-control" name="phoneNo" placeholder="Ex: +880123456789" required/>
                         </div>
                       </div>
                     </div>

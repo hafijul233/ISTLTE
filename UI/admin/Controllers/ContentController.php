@@ -34,7 +34,7 @@ if($page != NULL){
     case "SearchStudent": $activePage = $activePage . "student/SearchStudent.php";
       break;
     
-    case "UpdateStudent": $activePage = $activePage . "student/updatestudent.php";
+    case "UpdateStudent": $activePage = $activePage . "student/UpdateStudent.php";
       break;
     
     case "StudentProfile": $activePage = $activePage . "student/StudentProfile.php";
