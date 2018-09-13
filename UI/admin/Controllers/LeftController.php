@@ -15,7 +15,11 @@ else{
       case "Enrollment" :
         require 'Views/Include/EnrollLeftSlidebar.php';
           break;
-
+      
+      case "ResultProcessor" :
+        require 'Views/Include/ResultProcessLeftSlidebar.php';
+          break;
+      
       default: require 'HomeLeftSlidebar.php';
           break;
     }

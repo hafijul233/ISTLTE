@@ -1,13 +1,13 @@
 <?php 
 include '../../SETUP/configuration.php';
-include '../../Controllers/functions/session.php';
-include '../../Database/dbconnection.php';
+include '../../BLL/functions/session.php';
+include '../../DAL/dbconnection.php';
 //set serial id positon
 /*if(isset($_GET["id"]))
     $serial_id = $_GET["id"];
 else
     $serial_id = $_SESSION["serial_id"];
-
+*/
 // Check the Page to Display
   if(isset($_GET["page"])){
     $page = $_GET["page"];
@@ -15,7 +15,7 @@ else
   
   else {
     $page = null; 
-  }*/
+  }
   
 ?>
 
@@ -43,14 +43,14 @@ else
 
   <header class="main-header">
 
-    <?php reqViewsre_once 'include/header.php'; ?>
+    <?php require 'include/header.php'; ?>
   
   </header>
   <!-- Full Width Column -->
   <div class="content-wrapper">
     <div class="container">
       <!-- Content Header (Page header) -->      
-      <?php reqViewsre 'controller.php'; ?>
+      <?php require 'controller.php'; ?>
       <!-- /.content -->
     </div>
     <!-- /.container -->

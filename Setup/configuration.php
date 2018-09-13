@@ -15,7 +15,7 @@ $categories = array(
     "teacher" => "teacher",
     "employee" => "employee",
     "parent" => "parent",
-    "student" => "stundent"
+    "student" => "student"
     );
 
 //Developer information

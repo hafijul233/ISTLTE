@@ -24,44 +24,49 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="header"><center>MAIN NAVIGATION</center></li>
+        <li class="header">ENROLL NAVIGATION</li>
         <li>
-          <a href="index.php?api=Home&page=Dashboard">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="index.php?api=Administration&page=Dashboard">
-            <i class="fa fa-university"></i> <span>Administration</span>
-          </a>
-        </li>
-        <li>
-          <a href="index.php?api=Enrollment&page=Dashboard">
-            <i class="fa fa-user-plus"></i> <span>Enrollment</span>
+            <a href="index.php?api=Home&page=Dashboard">
+            <i class="fa fa-home"></i> <span>Go To Home Page</span>
           </a>
         </li>
         <li>
           <a href="index.php?api=ResultProcessor&page=Dashboard">
-            <i class="fa fa-edit"></i> <span>Result Processor</span>
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Layout Options</span>
+            <i class="fa fa-list-alt"></i>
+            <span>Exam Result List</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="Views/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="Views/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="Views/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="Views/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="index.php?api=ResultProcessor&page=Assignment"><i class="fa fa-circle-o"></i> Assignment</a></li>
+            <li><a href="index.php?api=ResultProcessor&page=Incourse"><i class="fa fa-circle-o"></i> Incourse Exam</a></li>
+            <li><a href="index.php?api=ResultProcessor&page=MidTerm"><i class="fa fa-circle-o"></i> Mid-Term Exam</a></li>
+            <li><a href="index.php?api=ResultProcessor&page=Final"><i class="fa fa-circle-o"></i> Final Exam</a></li>
           </ul>
         </li>
-        <li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-edit"></i>
+            <span>Enter Exam Marks</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.php?api=ResultProcessor&page=EntryAssignment"><i class="fa fa-circle-o"></i> Assignment</a></li>
+            <li><a href="index.php?api=ResultProcessor&page=EntryIncourse"><i class="fa fa-circle-o"></i> Incourse Exam</a></li>
+            <li><a href="index.php?api=ResultProcessor&page=EntryMidTerm"><i class="fa fa-circle-o"></i> Mid-Term Exam</a></li>
+            <li><a href="index.php?api=ResultProcessor&page=EntryFinal"><i class="fa fa-circle-o"></i> Final Exam</a></li>
+          </ul>
+        </li>
+        
+        <!--<li>
           <a href="Views/widgets.html">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
@@ -164,6 +169,39 @@
             <li><a href="Views/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-share"></i> <span>Multilevel</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+            <li>
+              <a href="#"><i class="fa fa-circle-o"></i> Level One
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+                <li>
+                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+          </ul>
+        </li>-->
         <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
         <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>

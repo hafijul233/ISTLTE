@@ -31,30 +31,29 @@ if($userinfo["confirm"] == "Found" && $userinfo["status"] == 1){
     $_SESSION["UserCategory"] = $userinfo["UserCategory"];
     
     $userCategory = $userinfo["UserCategory"];
-       
     switch ($userCategory) {//$categories will be found in Configuration.php
         case $categories["admin"] : 
-            $url = "../../UI/" . $categories["admin"] . "/index.php";
+            $url = "../../UI/admin/index.php";
                 redirect_to($url);    
                     break;
                     
         case $categories["teacher"] : 
-            $url = "../../UI/" . $categories["teacher"] . "/index.php";
+            $url = "../../UI/teacher/index.php";
                 redirect_to($url);    
                     break;
                     
         case $categories["employee"] : 
-            $url = "../../UI/" . $categories["employee"] . "/index.php";
+            $url = "../../UI/employee/index.php";
                 redirect_to($url);    
                     break;
                     
         case $categories["parent"] : 
-            $url = "../../UI/" . $categories["parent"] . "/index.php";
+            $url = "../../UI/parent/index.php";
                 redirect_to($url);    
                     break;
                     
         case $categories["student"] : 
-            $url = "../../UI/" . $categories["student"] . "/index.php";
+            $url = "../../UI/student/index.php";
                 redirect_to($url);    
                     break;
                     
